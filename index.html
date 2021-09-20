@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head><title>proba</title></head>
-  <body>
-    <h1>hello from proba php</h1>
-    <div id="mydiv"></div>
+  <head>
+    <title>proba</title>
     <script>
-      var d = document.getElementById("mydiv");
-      d.textContent = "jopa";
+        function loadFrame()
+        {
+            document.getElementById('frame').scrollTop = 310;
+            document.getElementById('frame').scrollLeft = 40;
+        }
     </script>
+  </head>
+  <body onload="loadFrame()">
+    <h1>hello from proba php</h1>
+    <div id="frame">
+    <iframe src="testgamevk.000webhostapp.com"  width="1024" height="1000" scrolling="no"></iframe>
+    </div>
   </body>
 </html>
